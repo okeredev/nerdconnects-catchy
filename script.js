@@ -6,11 +6,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // ── 1. THEME SWITCHER (Dark / Light Mode) ──
   const themeToggle = document.getElementById('theme-toggle');
-  const storedTheme = localStorage.getItem('nerd_theme');
-  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+  const storedTheme = localStorage.getItem('nerd_theme_catchy');
   
-  // Set initial theme
-  const initialTheme = storedTheme || (prefersDark ? 'dark' : 'dark'); // default dark with rich accents
+  // Default to signature sleek dark mode
+  const initialTheme = storedTheme ? storedTheme : 'dark';
   document.documentElement.setAttribute('data-theme', initialTheme);
   updateThemeIcon(initialTheme);
 
@@ -19,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
       const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('nerd_theme', newTheme);
+      localStorage.setItem('nerd_theme_catchy', newTheme);
       updateThemeIcon(newTheme);
     });
   }
