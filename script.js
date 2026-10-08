@@ -4,31 +4,14 @@
 
 document.addEventListener('DOMContentLoaded', function () {
 
-  // ── 1. THEME SWITCHER (Dark / Light Mode) ──
-  const themeToggle = document.getElementById('theme-toggle');
-  const storedTheme = localStorage.getItem('nerd_theme_catchy');
-  
-  // Default to signature sleek dark mode
-  const initialTheme = storedTheme ? storedTheme : 'dark';
-  document.documentElement.setAttribute('data-theme', initialTheme);
-  updateThemeIcon(initialTheme);
+    // ── PERMANENT SLEEK DARK MODE (NO LIGHT MODE) ──
+  document.documentElement.setAttribute('data-theme', 'dark');
+  try {
+    localStorage.removeItem('nerd_theme');
+    localStorage.removeItem('nerd_theme_v2');
+    localStorage.removeItem('nerd_theme_catchy');
+  } catch(e) {}
 
-  if (themeToggle) {
-    themeToggle.addEventListener('click', function () {
-      const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
-      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-      document.documentElement.setAttribute('data-theme', newTheme);
-      localStorage.setItem('nerd_theme_catchy', newTheme);
-      updateThemeIcon(newTheme);
-    });
-  }
-
-  function updateThemeIcon(theme) {
-    if (!themeToggle) return;
-    themeToggle.innerHTML = theme === 'dark' ? '☀️' : '🌙';
-    themeToggle.setAttribute('title', theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode');
-    themeToggle.setAttribute('aria-label', theme === 'dark' ? 'Switch to Light Mode' : 'Switch to Dark Mode');
-  }
 
   // ── 2. READING PROGRESS BAR ──
   const progressBar = document.getElementById('reading-progress');

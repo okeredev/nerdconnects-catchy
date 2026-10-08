@@ -38,7 +38,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
 
   <!-- Styles with cache-buster -->
-  <link rel="stylesheet" href="styles.css?v=3.1" />
+  <link rel="stylesheet" href="styles.css?v=3.2" />
 
   <style>
     /* Critical fallback styles for ticker & dark theme */
@@ -115,6 +115,20 @@
     @keyframes pulse-dot {
       0%, 100% { opacity: 1; transform: scale(1); }
       50% { opacity: 0.35; transform: scale(0.85); }
+    }
+    .navbar {
+      background: rgba(3, 7, 18, 0.9) !important;
+      backdrop-filter: blur(24px) saturate(180%) !important;
+      border-bottom: 1px solid rgba(51, 65, 85, 0.4) !important;
+    }
+    .navbar__brand-text {
+      color: #f8fafc !important;
+    }
+    .navbar__links a {
+      color: #94a3b8 !important;
+    }
+    .navbar__links a:hover, .navbar__links a.active {
+      color: #4ade80 !important;
     }
   </style>
 
@@ -279,8 +293,8 @@
       </ul>
 
       <div class="navbar__right">
-        <!-- Theme Toggle -->
-        <button class="theme-toggle" id="theme-toggle" title="Toggle Light / Dark Mode" aria-label="Toggle Light / Dark Mode">☀️</button>
+        
+        
         <!-- CTA button -->
         <a href="https://nerdconnects.xyz" class="navbar__cta" id="nav-cta" target="_blank" rel="noopener">Register Now →</a>
         <!-- Mobile hamburger -->
@@ -791,6 +805,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=3.1"></script>
+  <script src="script.js?v=3.2"></script>
 </body>
 </html>
