@@ -27,8 +27,8 @@
 
 # Redirect www to non-www (update domain as needed)
 [[redirects]]
-  from = "https://www.blog.nerdconnects.xyz/*"
-  to = "https://blog.nerdconnects.xyz/:splat"
+  from = "https://www.portal.nerdconnects.xyz/*"
+  to = "https://portal.nerdconnects.xyz/:splat"
   status = 301
   force = true
 

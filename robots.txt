@@ -1,7 +1,7 @@
 # NerdConnects SEO Blog
-# https://blog.nerdconnects.xyz
+# https://portal.nerdconnects.xyz
 
 User-agent: *
 Allow: /
 
-Sitemap: https://blog.nerdconnects.xyz/sitemap.xml
+Sitemap: https://portal.nerdconnects.xyz/sitemap.xml

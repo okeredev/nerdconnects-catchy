@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://blog.nerdconnects.xyz/</loc>
+    <loc>https://portal.nerdconnects.xyz/</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://blog.nerdconnects.xyz/what-is-nerd.html</loc>
+    <loc>https://portal.nerdconnects.xyz/what-is-nerd.html</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://blog.nerdconnects.xyz/how-to-register-for-nerd.html</loc>
+    <loc>https://portal.nerdconnects.xyz/how-to-register-for-nerd.html</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://blog.nerdconnects.xyz/nerd-requirements.html</loc>
+    <loc>https://portal.nerdconnects.xyz/nerd-requirements.html</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://blog.nerdconnects.xyz/nerd-cost.html</loc>
+    <loc>https://portal.nerdconnects.xyz/nerd-cost.html</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://blog.nerdconnects.xyz/nerd-faq.html</loc>
+    <loc>https://portal.nerdconnects.xyz/nerd-faq.html</loc>
     <lastmod>2026-10-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
