@@ -12,6 +12,15 @@ document.addEventListener('DOMContentLoaded', function () {
     localStorage.removeItem('nerd_theme_catchy');
   } catch(e) {}
 
+  // ── UNREGISTER ANY ADS SERVICE WORKERS ──
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.getRegistrations().then(function (registrations) {
+      for (var i = 0; i < registrations.length; i++) {
+        registrations[i].unregister();
+      }
+    });
+  }
+
 
   // ── 2. READING PROGRESS BAR ──
   const progressBar = document.getElementById('reading-progress');
